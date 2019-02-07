@@ -1,0 +1,32 @@
+﻿body {
+}
+
+.CentrowanieDIV {
+    margin: auto;
+    width: 1000px;
+    height:600px;
+}
+
+.Content {
+    width : 500px;
+    margin: auto;
+}
+
+.ElementyWLini {
+    height: 50px;
+    width: 500px;
+    float: left;
+}
+
+.ElementyOddzielanie {
+    width: 200px;
+    height:50px;
+    float:left;
+}
+
+.Separator1 {
+    width:500px;
+    height: 5px;
+    border-top: 30px;
+    border-top-color:gray;
+}
