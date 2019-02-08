@@ -4,45 +4,42 @@ using System.Text;
 
 namespace Dane
 {
-    class Ksiazka
+    public class Ksiazka
     {
-        private String Autor;
+        private string tytul;
 
-        private String Tytul;
-
-        private int Strony;
-
-        Ksiazka (String Autor, String Tytul, int Strony)
+        public string Tytul
         {
-            setAutor(Autor);
-            setStrony(Strony);
-            setTytul(Tytul);
+            get { return tytul; }
+            set { tytul = value; }
         }
 
-        public String getAutor()
+        private string autor;
+
+        public string Autor
         {
-            return Autor;
-        }
-        public String getTytul()
-        {
-            return Tytul;
-        }
-        public int getStrony()
-        {
-            return Strony;
+            get { return autor; }
+            set { autor = value; }
         }
 
-        public void setAutor(String Autor)
+        private int iloscStron;
+
+        public int IloscStron
         {
-            this.Autor = Autor;
+            get { return iloscStron; }
+            set { iloscStron = value; }
         }
-        public void setTytul(String Tytul)
+
+        public Ksiazka(string tytul, string autor, int iloscStron)
         {
-            this.Tytul = Tytul;
+            this.tytul = tytul;
+            this.autor = autor;
+            this.iloscStron = iloscStron;
         }
-        public void setStrony( int Strony)
+
+        public override string ToString()
         {
-            this.Strony = Strony;
+            return string.Format("{0} - \"{1}\"", Autor, Tytul);        
         }
     }
 }

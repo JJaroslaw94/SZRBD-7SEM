@@ -31,6 +31,7 @@
             this.lbKsiazki = new System.Windows.Forms.ListBox();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.btnUsun = new System.Windows.Forms.Button();
+            this.btnEdytuj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbKsiazki
@@ -49,6 +50,7 @@
             this.btnDodaj.TabIndex = 1;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // btnUsun
             // 
@@ -58,12 +60,24 @@
             this.btnUsun.TabIndex = 2;
             this.btnUsun.Text = "Usuń";
             this.btnUsun.UseVisualStyleBackColor = true;
+            this.btnUsun.Click += new System.EventHandler(this.btnUsun_Click);
+            // 
+            // btnEdytuj
+            // 
+            this.btnEdytuj.Location = new System.Drawing.Point(174, 235);
+            this.btnEdytuj.Name = "btnEdytuj";
+            this.btnEdytuj.Size = new System.Drawing.Size(75, 23);
+            this.btnEdytuj.TabIndex = 3;
+            this.btnEdytuj.Text = "Edytuj";
+            this.btnEdytuj.UseVisualStyleBackColor = true;
+            this.btnEdytuj.Click += new System.EventHandler(this.btnEdytuj_Click);
             // 
             // frmBiblioteczka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 311);
+            this.Controls.Add(this.btnEdytuj);
             this.Controls.Add(this.btnUsun);
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.lbKsiazki);
@@ -78,6 +92,7 @@
         private System.Windows.Forms.ListBox lbKsiazki;
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Button btnUsun;
+        private System.Windows.Forms.Button btnEdytuj;
     }
 }
 

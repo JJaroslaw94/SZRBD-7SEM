@@ -11,22 +11,27 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     using Dane;
-    public partial class frmKsiazka : Form 
+    public partial class frmEdycja : Form
     {
         private Ksiazka ksiazka;
 
-        public Ksiazka GetKsiazka
-        {
-            get { return ksiazka; }
-        }
-        public frmKsiazka()
+        public frmEdycja(Ksiazka ksiazka)
         {
             InitializeComponent();
+
+            this.ksiazka = ksiazka;
+
+            tbxAutor.Text = ksiazka.Autor;
+            tbxTytul.Text = ksiazka.Tytul;
+            nudStron.Value = ksiazka.IloscStron;
         }
 
-        private void btnDodaj_Click(object sender, EventArgs e)
+        private void btnEdytuj_Click(object sender, EventArgs e)
         {
-            this.ksiazka = new Ksiazka(tbxTytul.Text, tbxAutor.Text, (int)nudStron.Value);
+            ksiazka.Autor = tbxAutor.Text;
+            ksiazka.Tytul = tbxTytul.Text;
+            ksiazka.IloscStron = Convert.ToInt32(nudStron.Value);
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -34,7 +39,7 @@ namespace WindowsFormsApp1
         private void btnAnuluj_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
-            this.Hide();
+            this.Close();
         }
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="frmBiblioteczka.Designer.cs">
       <DependentUpon>frmBiblioteczka.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEdycja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdycja.Designer.cs">
+      <DependentUpon>frmEdycja.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKsiazka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBiblioteczka.resx">
       <DependentUpon>frmBiblioteczka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdycja.resx">
+      <DependentUpon>frmEdycja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKsiazka.resx">
       <DependentUpon>frmKsiazka.cs</DependentUpon>

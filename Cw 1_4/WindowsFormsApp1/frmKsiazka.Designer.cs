@@ -62,6 +62,7 @@
             this.btnDodaj.TabIndex = 3;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // btnAnuluj
             // 
@@ -71,6 +72,7 @@
             this.btnAnuluj.TabIndex = 4;
             this.btnAnuluj.Text = "Anuluj";
             this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // label1
             // 
