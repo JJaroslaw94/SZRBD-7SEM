@@ -1,6 +1,7 @@
 # SZRBD-7SEM
 
-#ENG
+ENG
+
 Set of projects that were made as assignments for school subject "Relational Database Management System".
 Those Projects had low complexity, and had the purpose to show the basics of this subject.
 - 1.2WinForm  - simple program that makes use of Console to show messages, and also merges strings
@@ -9,7 +10,8 @@ Those Projects had low complexity, and had the purpose to show the basics of thi
 - Cw 2_1      - Login site made with WebForms
 - 3.DB        - Program uses WebForms and SQL database to adding data and viewing it in browser
 
-#PL
+PL
+
 Zestaw projektów wykonanych na potrzebę zaliczenia przedmiotu "Systemy Zarządzania Relacyjnymi Bazami Danych".
 Projekty te mają małą złożoność i miały mi pokazać podstawy wybranych technologi.
 - 1.2WinForm  - bardzo prosty program wykorzystujący konsolę do wyświetlania prostych komunikatów, oraz wykonuje proste łączenia ciągów (String)
